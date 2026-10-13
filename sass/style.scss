@@ -137,12 +137,9 @@ footer {
     cursor: pointer;
   }
 
-  /* Au survol, le nom de tous les personnages passe en gras */
   & > div:hover p {
     font-weight: bold;
   }
-
-  /* Et pour ces personnages, le cercle et le nom prennent la couleur de leur maison */
 
   .gryffindor:hover {
     img {
@@ -195,7 +192,6 @@ footer {
   }
 }
 
-/* PAGE PERSO */
 .page_perso {
   h3 {
     padding: 50px 50px 0 50px;
@@ -214,8 +210,6 @@ footer {
         display: flex;
         justify-content: space-around;
 
-        /* Chaque p occupe la moitie de la ligne : les libelles forment une
-           premiere colonne, les valeurs une seconde, alignees entre elles */
         p {
           width: 50%;
         }

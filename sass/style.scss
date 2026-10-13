@@ -126,11 +126,19 @@ footer {
   }
 }
 
+.mort {
+  filter: grayscale(100%);
+}
+
 .characters {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 30px;
+
+  a {
+    text-decoration: none;
+  }
   & > div {
     padding: 30px;
     cursor: pointer;

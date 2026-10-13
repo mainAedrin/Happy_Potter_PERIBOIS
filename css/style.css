@@ -121,11 +121,18 @@ footer p {
   height: 136px;
 }
 
+.mort {
+  filter: grayscale(100%);
+}
+
 .characters {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 30px;
+}
+.characters a {
+  text-decoration: none;
 }
 .characters > div {
   padding: 30px;

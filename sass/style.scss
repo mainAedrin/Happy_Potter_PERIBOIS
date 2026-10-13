@@ -115,6 +115,7 @@ footer {
     width: 140px;
     height: 140px;
     text-align: center;
+    cursor: pointer;
     &:hover {
       background: #fff6e6;
     }
@@ -133,7 +134,52 @@ footer {
   padding: 30px;
   & > div {
     padding: 30px;
+    cursor: pointer;
   }
+
+  /* Au survol, le nom de tous les personnages passe en gras */
+  & > div:hover p {
+    font-weight: bold;
+  }
+
+  /* Et pour ces personnages, le cercle et le nom prennent la couleur de leur maison */
+
+  .gryffindor:hover {
+    img {
+      border-color: var(--red);
+    }
+    p {
+      color: var(--red);
+    }
+  }
+
+  .slytherin:hover {
+    img {
+      border-color: var(--green);
+    }
+    p {
+      color: var(--green);
+    }
+  }
+
+  .ravenclaw:hover {
+    img {
+      border-color: var(--blue);
+    }
+    p {
+      color: var(--blue);
+    }
+  }
+
+  .hufflepuff:hover {
+    img {
+      border-color: var(--yellow);
+    }
+    p {
+      color: var(--yellow);
+    }
+  }
+
   img {
     width: 150px;
     height: 150px;
@@ -167,6 +213,12 @@ footer {
       & > div {
         display: flex;
         justify-content: space-around;
+
+        /* Chaque p occupe la moitie de la ligne : les libelles forment une
+           premiere colonne, les valeurs une seconde, alignees entre elles */
+        p {
+          width: 50%;
+        }
       }
 
       p.attr {

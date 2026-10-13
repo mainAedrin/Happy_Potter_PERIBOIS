@@ -113,6 +113,7 @@ footer p {
   width: 140px;
   height: 140px;
   text-align: center;
+  cursor: pointer;
 }
 .houses > div:hover {
   background: #fff6e6;
@@ -130,6 +131,36 @@ footer p {
 }
 .characters > div {
   padding: 30px;
+  cursor: pointer;
+}
+
+.characters > div:hover p {
+  font-weight: bold;
+}
+
+.characters .gryffindor:hover img {
+  border-color: var(--red);
+}
+.characters .gryffindor:hover p {
+  color: var(--red);
+}
+.characters .slytherin:hover img {
+  border-color: var(--green);
+}
+.characters .slytherin:hover p {
+  color: var(--green);
+}
+.characters .ravenclaw:hover img {
+  border-color: var(--blue);
+}
+.characters .ravenclaw:hover p {
+  color: var(--blue);
+}
+.characters .hufflepuff:hover img {
+  border-color: var(--yellow);
+}
+.characters .hufflepuff:hover p {
+  color: var(--yellow);
 }
 .characters img {
   width: 150px;
@@ -163,6 +194,10 @@ footer p {
 .page_perso .perso__right > div {
   display: flex;
   justify-content: space-around;
+}
+
+.page_perso .perso__right > div p {
+  width: 50%;
 }
 .page_perso .perso__right p.attr {
   font-weight: bold;

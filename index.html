@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>ENZO PERIBOIS - Partiel Harry Potter</title>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <main>
@@ -13,24 +14,30 @@
           <img src="./images/logo/logo.png"/>
         </div>
         <div class="header__left">
-          <h1>ENZO PERIBOIS - Wiki Harry Potter</h1>
           <img src="./images/menu.png"/>
+          <h1>ENZO PERIBOIS - Wiki Harry Potter</h1>
+          <ul>
+            <li>MAISONS</li>
+            <li>SORTS</li>
+            <li>CONTACT</li>
+            <li>GALLERIE</li>
+          </ul>
         </div>
       </header>
 
       <section>
         <h3>HOUSES</h3>
         <div class="houses">
-          <div>
+          <div data-house="Gryffindor">
             <img src="./images/logo/Gryffindor.png"/>
           </div>
-          <div>
+          <div data-house="Hufflepuff">
             <img src="./images/logo/Hufflepuff.png"/>
           </div>
-          <div>
+          <div data-house="Ravenclaw">
             <img src="./images/logo/Ravenclaw.png"/>
           </div>
-          <div>
+          <div data-house="Slytherin">
             <img src="./images/logo/Slytherin.png"/>
           </div>
         </div>
@@ -38,40 +45,7 @@
 
       <section>
         <h3>CHARACTERS</h3>
-        <div class="characters">
-          <div class="gryffindor">
-            <img src="./images/characters/harry.webp"/>
-            <p>Harry Potter</p>
-          </div>
-          <div>
-            <img src="./images/characters/hermione.webp"/>
-            <p>Hermione Granger</p>
-          </div>
-          <div>
-            <img src="./images/characters/ron.webp"/>
-            <p>Ron Weasley</p>
-          </div>
-          <div class="slytherin">
-            <img src="./images/characters/draco.webp"/>
-            <p>Drago Malefoy</p>
-          </div>
-          <div class="ravenclaw">
-            <img src="./images/characters/cho.webp"/>
-            <p>Cho Chang</p>
-          </div>
-          <div>
-            <img src="./images/characters/snape.webp"/>
-            <p>Severus Snape</p>
-          </div>
-          <div>
-            <img src="./images/characters/mcgonagall.webp"/>
-            <p>Minerva McGonagall</p>
-          </div>
-          <div class="hufflepuff">
-            <img src="./images/characters/cedric.webp"/>
-            <p>Cedric Diggory</p>
-          </div>
-        </div>
+        <div class="characters"></div>
       </section>
     </main>
 
